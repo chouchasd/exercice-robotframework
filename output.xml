@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-21T18:52:17.471371" rpa="false" schemaversion="5">
+<suite id="s1" name="Crationcompte" source="c:\Users\ASUS\OneDrive\Bureau\Exercice Robot Framework\Crationcompte.robot">
+<test id="s1-t1" name="Creation de compte" line="14">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-21T18:52:18.283321" level="INFO">Opening browser 'Chrome' to base url 'https://ecommerce-playground.lambdatest.io/'.</msg>
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-21T18:52:18.283321" elapsed="5.058677"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-21T18:52:23.375142" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.124)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E9337032+63090]
+	(No symbol) [0x00007FF7E92A2C82]
+	(No symbol) [0x00007FF7E913EC65]
+	(No symbol) [0x00007FF7E911CA7C]
+	(No symbol) [0x00007FF7E91AD687]
+	(No symbol) [0x00007FF7E91C2AC1]
+	(No symbol) [0x00007FF7E91A6D83]
+	(No symbol) [0x00007FF7E91783A8]
+	(No symbol) [0x00007FF7E9179441]
+	GetHandleVerifier [0x00007FF7E97325AD+4238317]
+	GetHandleVerifier [0x00007FF7E976F70D+4488525]
+	GetHandleVerifier [0x00007FF7E97679EF+4456495]
+	GetHandleVerifier [0x00007FF7E9410576+953270]
+	(No symbol) [0x00007FF7E92AE54F]
+	(No symbol) [0x00007FF7E92A9224]
+	(No symbol) [0x00007FF7E92A935B]
+	(No symbol) [0x00007FF7E9299B94]
+	BaseThreadInitThunk [0x00007FFD8B68257D+29]
+	RtlUserThreadStart [0x00007FFD8C40AA48+40]
+</msg>
+<msg time="2024-04-21T18:52:23.443532" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.124)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E9337032+63090]
+	(No symbol) [0x00007FF7E92A2C82]
+	(No symbol) [0x00007FF7E913EC65]
+	(No symbol) [0x00007FF7E911CA7C]
+	(No symbol) [0x00007FF7E91AD687]
+	(No symbol) [0x00007FF7E91C2AC1]
+	(No symbol) [0x00007FF7E91A6D83]
+	(No symbol) [0x00007FF7E91783A8]
+	(No symbol) [0x00007FF7E9179441]
+	GetHandleVerifier [0x00007FF7E97325AD+4238317]
+	GetHandleVerifier [0x00007FF7E976F70D+4488525]
+	GetHandleVerifier [0x00007FF7E97679EF+4456495]
+	GetHandleVerifier [0x00007FF7E9410576+953270]
+	(No symbol) [0x00007FF7E92AE54F]
+	(No symbol) [0x00007FF7E92A9224]
+	(No symbol) [0x00007FF7E92A935B]
+	(No symbol) [0x00007FF7E9299B94]
+	BaseThreadInitThunk [0x00007FFD8B68257D+29]
+	RtlUserThreadStart [0x00007FFD8C40AA48+40]
+</msg>
+<arg>Your Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="FAIL" start="2024-04-21T18:52:23.350726" elapsed="0.119378">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.124)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E9337032+63090]
+	(No symbol) [0x00007FF7E92A2C82]
+	(No symbol) [0x00007FF7E913EC65]
+	(No symbol) [0x00007FF7E911CA7C]
+	(No symbol) [0x00007FF7E91AD687]
+	(No symbol) [0x00007FF7E91C2AC1]
+	(No symbol) [0x00007FF7E91A6D83]
+	(No symbol) [0x00007FF7E91783A8]
+	(No symbol) [0x00007FF7E9179441]
+	GetHandleVerifier [0x00007FF7E97325AD+4238317]
+	GetHandleVerifier [0x00007FF7E976F70D+4488525]
+	GetHandleVerifier [0x00007FF7E97679EF+4456495]
+	GetHandleVerifier [0x00007FF7E9410576+953270]
+	(No symbol) [0x00007FF7E92AE54F]
+	(No symbol) [0x00007FF7E92A9224]
+	(No symbol) [0x00007FF7E92A935B]
+	(No symbol) [0x00007FF7E9299B94]
+	BaseThreadInitThunk [0x00007FFD8B68257D+29]
+	RtlUserThreadStart [0x00007FFD8C40AA48+40]
+</status>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=a[href="https://ecommerce-playground.lambdatest.io/index.php?route=account/account"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T18:52:23.471826" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=a[href="https://ecommerce-playground.lambdatest.io/index.php?route=account/register"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T18:52:23.475897" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>css=input[name="firstname"]</arg>
+<arg>${firstname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T18:52:23.480497" elapsed="0.003575"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>css=input[name="lastname"]</arg>
+<arg>${lastname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T18:52:23.484072" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>css=input[name="email"]</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T18:52:23.491933" elapsed="0.008659"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>css=input[name="telephone"]</arg>
+<arg>${tel}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T18:52:23.505575" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>css=input[name="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T18:52:23.511846" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>css=input[name="confirm"]</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T18:52:23.516382" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=input[id="input-newsletter-yes"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T18:52:23.520533" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=input[name="agree"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T18:52:23.523566" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>css=input[value="Continue"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T18:52:23.530110" elapsed="0.000580"/>
+</kw>
+<status status="FAIL" start="2024-04-21T18:52:18.283321" elapsed="5.249754">NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.124)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E9337032+63090]
+	(No symbol) [0x00007FF7E92A2C82]
+	(No symbol) [0x00007FF7E913EC65]
+	(No symbol) [0x00007FF7E911CA7C]
+	(No symbol) [0x00007FF7E91AD687]
+	(No symbol) [0x00007FF7E91C2AC1]
+	(No symbol) [0x00007FF7E91A6D83]
+	(No symbol) [0x00007FF7E91783A8]
+	(No symbol) [0x00007FF7E9179441]
+	GetHandleVerifier [0x00007FF7E97325AD+4238317]
+	GetHandleVerifier [0x00007FF7E976F70D+4488525]
+	GetHandleVerifier [0x00007FF7E97679EF+4456495]
+	GetHandleVerifier [0x00007FF7E9410576+953270]
+	(No symbol) [0x00007FF7E92AE54F]
+	(No symbol) [0x00007FF7E92A9224]
+	(No symbol) [0x00007FF7E92A935B]
+	(No symbol) [0x00007FF7E9299B94]
+	BaseThreadInitThunk [0x00007FFD8B68257D+29]
+	RtlUserThreadStart [0x00007FFD8C40AA48+40]
+</status>
+</test>
+<status status="FAIL" start="2024-04-21T18:52:17.490715" elapsed="6.051010"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Crationcompte">Crationcompte</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-04-21T18:52:23.375142" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.124)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E9337032+63090]
+	(No symbol) [0x00007FF7E92A2C82]
+	(No symbol) [0x00007FF7E913EC65]
+	(No symbol) [0x00007FF7E911CA7C]
+	(No symbol) [0x00007FF7E91AD687]
+	(No symbol) [0x00007FF7E91C2AC1]
+	(No symbol) [0x00007FF7E91A6D83]
+	(No symbol) [0x00007FF7E91783A8]
+	(No symbol) [0x00007FF7E9179441]
+	GetHandleVerifier [0x00007FF7E97325AD+4238317]
+	GetHandleVerifier [0x00007FF7E976F70D+4488525]
+	GetHandleVerifier [0x00007FF7E97679EF+4456495]
+	GetHandleVerifier [0x00007FF7E9410576+953270]
+	(No symbol) [0x00007FF7E92AE54F]
+	(No symbol) [0x00007FF7E92A9224]
+	(No symbol) [0x00007FF7E92A935B]
+	(No symbol) [0x00007FF7E9299B94]
+	BaseThreadInitThunk [0x00007FFD8B68257D+29]
+	RtlUserThreadStart [0x00007FFD8C40AA48+40]
+</msg>
+</errors>
+</robot>

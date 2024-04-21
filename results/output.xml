@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-04-21T19:12:37.511128" rpa="false" schemaversion="5">
+<suite id="s1" name="Exercice Robot Framework" source="C:\Users\ASUS\OneDrive\Bureau\Exercice Robot Framework">
+<suite id="s1-s1" name="AchatProduits" source="C:\Users\ASUS\OneDrive\Bureau\Exercice Robot Framework\AchatProduits.robot">
+<test id="s1-s1-t1" name="Ajouter un produit au panier" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-21T19:12:38.339602" level="INFO">Opening browser 'Chrome' to base url 'https://ecommerce-playground.lambdatest.io/'.</msg>
+<arg>https://ecommerce-playground.lambdatest.io/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-21T19:12:38.339602" elapsed="7.419701"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-21T19:12:45.815827" level="INFO">Page title is 'Your Store'.</msg>
+<arg>Your Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-04-21T19:12:45.791834" elapsed="0.023993"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-21T19:12:45.823829" level="INFO">Typing text 'HTC Touch HD' into text field 'css=#entry_217822 &gt; .search-wrapper &gt; form &gt; #search &gt; .search-input-group &gt; .search-input &gt; .flex-fill &gt; input'.</msg>
+<arg>css=#entry_217822 &gt; .search-wrapper &gt; form &gt; #search &gt; .search-input-group &gt; .search-input &gt; .flex-fill &gt; input</arg>
+<arg>HTC Touch HD</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T19:12:45.815827" elapsed="0.850093"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-21T19:12:46.671830" level="INFO">Clicking button 'css=button[type="submit"]:contains("Search")'.</msg>
+<msg time="2024-04-21T19:12:47.144475" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-21T19:12:47.144475" level="FAIL">JavascriptException: Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=123.0.6312.124)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71E917032+63090]
+	(No symbol) [0x00007FF71E882C82]
+	(No symbol) [0x00007FF71E71EC65]
+	(No symbol) [0x00007FF71E723D21]
+	(No symbol) [0x00007FF71E726159]
+	(No symbol) [0x00007FF71E726200]
+	(No symbol) [0x00007FF71E76460C]
+	(No symbol) [0x00007FF71E764ADC]
+	(No symbol) [0x00007FF71E7A5B67]
+	(No symbol) [0x00007FF71E78701F]
+	(No symbol) [0x00007FF71E7A3412]
+	(No symbol) [0x00007FF71E786D83]
+	(No symbol) [0x00007FF71E7583A8]
+	(No symbol) [0x00007FF71E759441]
+	GetHandleVerifier [0x00007FF71ED125AD+4238317]
+	GetHandleVerifier [0x00007FF71ED4F70D+4488525]
+	GetHandleVerifier [0x00007FF71ED479EF+4456495]
+	GetHandleVerifier [0x00007FF71E9F0576+953270]
+	(No symbol) [0x00007FF71E88E54F]
+	(No symbol) [0x00007FF71E889224]
+	(No symbol) [0x00007FF71E88935B]
+	(No symbol) [0x00007FF71E879B94]
+	BaseThreadInitThunk [0x00007FFE5967257D+29]
+	RtlUserThreadStart [0x00007FFE5AD6AA48+40]
+</msg>
+<arg>css=button[type="submit"]:contains("Search")</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-21T19:12:46.671830" elapsed="0.667363">JavascriptException: Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=123.0.6312.124)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71E917032+63090]
+	(No symbol) [0x00007FF71E882C82]
+	(No symbol) [0x00007FF71E71EC65]
+	(No symbol) [0x00007FF71E723D21]
+	(No symbol) [0x00007FF71E726159]
+	(No symbol) [0x00007FF71E726200]
+	(No symbol) [0x00007FF71E76460C]
+	(No symbol) [0x00007FF71E764ADC]
+	(No symbol) [0x00007FF71E7A5B67]
+	(No symbol) [0x00007FF71E78701F]
+	(No symbol) [0x00007FF71E7A3412]
+	(No symbol) [0x00007FF71E786D83]
+	(No symbol) [0x00007FF71E7583A8]
+	(No symbol) [0x00007FF71E759441]
+	GetHandleVerifier [0x00007FF71ED125AD+4238317]
+	GetHandleVerifier [0x00007FF71ED4F70D+4488525]
+	GetHandleVerifier [0x00007FF71ED479EF+4456495]
+	GetHandleVerifier [0x00007FF71E9F0576+953270]
+	(No symbol) [0x00007FF71E88E54F]
+	(No symbol) [0x00007FF71E889224]
+	(No symbol) [0x00007FF71E88935B]
+	(No symbol) [0x00007FF71E879B94]
+	BaseThreadInitThunk [0x00007FFE5967257D+29]
+	RtlUserThreadStart [0x00007FFE5AD6AA48+40]
+</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Search - HTC Touch HD</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-04-21T19:12:47.346727" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=#entry_212469 &gt; .row &gt; :nth-child(1)</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T19:12:47.346727" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=button[title="Add to Cart"]:contains('Add to Cart')</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T19:12:47.346727" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Success: You have added</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-04-21T19:12:47.346727" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>css=#entry_217825 a[aria-controls="cart-total-drawer"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2024-04-21T19:12:47.346727" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=#entry_217825 a[aria-controls="cart-total-drawer"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T19:12:47.354801" elapsed="0.002859"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<arg>css=a[href="https://ecommerce-playground.lambdatest.io/index.php?route=checkout/cart"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T19:12:47.357660" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-21T19:12:38.339602" elapsed="9.018058">JavascriptException: Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=123.0.6312.124)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71E917032+63090]
+	(No symbol) [0x00007FF71E882C82]
+	(No symbol) [0x00007FF71E71EC65]
+	(No symbol) [0x00007FF71E723D21]
+	(No symbol) [0x00007FF71E726159]
+	(No symbol) [0x00007FF71E726200]
+	(No symbol) [0x00007FF71E76460C]
+	(No symbol) [0x00007FF71E764ADC]
+	(No symbol) [0x00007FF71E7A5B67]
+	(No symbol) [0x00007FF71E78701F]
+	(No symbol) [0x00007FF71E7A3412]
+	(No symbol) [0x00007FF71E786D83]
+	(No symbol) [0x00007FF71E7583A8]
+	(No symbol) [0x00007FF71E759441]
+	GetHandleVerifier [0x00007FF71ED125AD+4238317]
+	GetHandleVerifier [0x00007FF71ED4F70D+4488525]
+	GetHandleVerifier [0x00007FF71ED479EF+4456495]
+	GetHandleVerifier [0x00007FF71E9F0576+953270]
+	(No symbol) [0x00007FF71E88E54F]
+	(No symbol) [0x00007FF71E889224]
+	(No symbol) [0x00007FF71E88935B]
+	(No symbol) [0x00007FF71E879B94]
+	BaseThreadInitThunk [0x00007FFE5967257D+29]
+	RtlUserThreadStart [0x00007FFE5AD6AA48+40]
+</status>
+</test>
+<test id="s1-s1-t2" name="Modifier la quantité de produit dans le panier" line="18">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-21T19:12:47.374088" level="INFO">Opening browser 'Chrome' to base url 'https://ecommerce-playground.lambdatest.io/'.</msg>
+<arg>https://ecommerce-playground.lambdatest.io/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-21T19:12:47.374088" elapsed="6.128873"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-21T19:12:53.526949" level="INFO">Page title is 'Your Store'.</msg>
+<arg>Your Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-04-21T19:12:53.502961" elapsed="0.023988"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-21T19:12:53.526949" level="INFO">Typing text 'HTC Touch HD' into text field 'css=#entry_217822 &gt; .search-wrapper &gt; form &gt; #search &gt; .search-input-group &gt; .search-input &gt; .flex-fill &gt; input'.</msg>
+<arg>css=#entry_217822 &gt; .search-wrapper &gt; form &gt; #search &gt; .search-input-group &gt; .search-input &gt; .flex-fill &gt; input</arg>
+<arg>HTC Touch HD</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T19:12:53.526949" elapsed="1.379522"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-21T19:12:54.906471" level="INFO">Clicking button 'css=button[type="submit"]:contains("Search")'.</msg>
+<msg time="2024-04-21T19:12:55.471589" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-21T19:12:55.471589" level="FAIL">JavascriptException: Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=123.0.6312.124)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71E917032+63090]
+	(No symbol) [0x00007FF71E882C82]
+	(No symbol) [0x00007FF71E71EC65]
+	(No symbol) [0x00007FF71E723D21]
+	(No symbol) [0x00007FF71E726159]
+	(No symbol) [0x00007FF71E726200]
+	(No symbol) [0x00007FF71E76460C]
+	(No symbol) [0x00007FF71E764ADC]
+	(No symbol) [0x00007FF71E7A5B67]
+	(No symbol) [0x00007FF71E78701F]
+	(No symbol) [0x00007FF71E7A3412]
+	(No symbol) [0x00007FF71E786D83]
+	(No symbol) [0x00007FF71E7583A8]
+	(No symbol) [0x00007FF71E759441]
+	GetHandleVerifier [0x00007FF71ED125AD+4238317]
+	GetHandleVerifier [0x00007FF71ED4F70D+4488525]
+	GetHandleVerifier [0x00007FF71ED479EF+4456495]
+	GetHandleVerifier [0x00007FF71E9F0576+953270]
+	(No symbol) [0x00007FF71E88E54F]
+	(No symbol) [0x00007FF71E889224]
+	(No symbol) [0x00007FF71E88935B]
+	(No symbol) [0x00007FF71E879B94]
+	BaseThreadInitThunk [0x00007FFE5967257D+29]
+	RtlUserThreadStart [0x00007FFE5AD6AA48+40]
+</msg>
+<arg>css=button[type="submit"]:contains("Search")</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-21T19:12:54.906471" elapsed="0.573123">JavascriptException: Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=123.0.6312.124)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71E917032+63090]
+	(No symbol) [0x00007FF71E882C82]
+	(No symbol) [0x00007FF71E71EC65]
+	(No symbol) [0x00007FF71E723D21]
+	(No symbol) [0x00007FF71E726159]
+	(No symbol) [0x00007FF71E726200]
+	(No symbol) [0x00007FF71E76460C]
+	(No symbol) [0x00007FF71E764ADC]
+	(No symbol) [0x00007FF71E7A5B67]
+	(No symbol) [0x00007FF71E78701F]
+	(No symbol) [0x00007FF71E7A3412]
+	(No symbol) [0x00007FF71E786D83]
+	(No symbol) [0x00007FF71E7583A8]
+	(No symbol) [0x00007FF71E759441]
+	GetHandleVerifier [0x00007FF71ED125AD+4238317]
+	GetHandleVerifier [0x00007FF71ED4F70D+4488525]
+	GetHandleVerifier [0x00007FF71ED479EF+4456495]
+	GetHandleVerifier [0x00007FF71E9F0576+953270]
+	(No symbol) [0x00007FF71E88E54F]
+	(No symbol) [0x00007FF71E889224]
+	(No symbol) [0x00007FF71E88935B]
+	(No symbol) [0x00007FF71E879B94]
+	BaseThreadInitThunk [0x00007FFE5967257D+29]
+	RtlUserThreadStart [0x00007FFE5AD6AA48+40]
+</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Search - HTC Touch HD</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-04-21T19:12:55.487602" elapsed="0.001564"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=#entry_212469 &gt; .row &gt; :nth-child(1)</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T19:12:55.503759" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=button[title="Add to Cart"]:contains('Add to Cart')</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T19:12:55.503759" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Success: You have added</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-04-21T19:12:55.503759" elapsed="0.007997"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>https://ecommerce-playground.lambdatest.io/index.php?route=checkout/cart</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2024-04-21T19:12:55.511756" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>css=input[style="min-width:3em"]</arg>
+<arg>5</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T19:12:55.519752" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=i[class="fas fa-sync-alt"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T19:12:55.519752" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Success: You have modified your shopping cart!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-04-21T19:12:55.519752" elapsed="0.008007"/>
+</kw>
+<status status="FAIL" start="2024-04-21T19:12:47.372896" elapsed="8.154863">JavascriptException: Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=123.0.6312.124)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71E917032+63090]
+	(No symbol) [0x00007FF71E882C82]
+	(No symbol) [0x00007FF71E71EC65]
+	(No symbol) [0x00007FF71E723D21]
+	(No symbol) [0x00007FF71E726159]
+	(No symbol) [0x00007FF71E726200]
+	(No symbol) [0x00007FF71E76460C]
+	(No symbol) [0x00007FF71E764ADC]
+	(No symbol) [0x00007FF71E7A5B67]
+	(No symbol) [0x00007FF71E78701F]
+	(No symbol) [0x00007FF71E7A3412]
+	(No symbol) [0x00007FF71E786D83]
+	(No symbol) [0x00007FF71E7583A8]
+	(No symbol) [0x00007FF71E759441]
+	GetHandleVerifier [0x00007FF71ED125AD+4238317]
+	GetHandleVerifier [0x00007FF71ED4F70D+4488525]
+	GetHandleVerifier [0x00007FF71ED479EF+4456495]
+	GetHandleVerifier [0x00007FF71E9F0576+953270]
+	(No symbol) [0x00007FF71E88E54F]
+	(No symbol) [0x00007FF71E889224]
+	(No symbol) [0x00007FF71E88935B]
+	(No symbol) [0x00007FF71E879B94]
+	BaseThreadInitThunk [0x00007FFE5967257D+29]
+	RtlUserThreadStart [0x00007FFE5AD6AA48+40]
+</status>
+</test>
+<test id="s1-s1-t3" name="Supprimer un produit du panier" line="32">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-21T19:12:55.560268" level="INFO">Opening browser 'Chrome' to base url 'https://ecommerce-playground.lambdatest.io/'.</msg>
+<arg>https://ecommerce-playground.lambdatest.io/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-21T19:12:55.560268" elapsed="8.575161"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-21T19:13:04.159422" level="INFO">Page title is 'Your Store'.</msg>
+<arg>Your Store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-04-21T19:13:04.143435" elapsed="0.015987"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-21T19:13:04.167418" level="INFO">Typing text 'HTC Touch HD' into text field 'css=#entry_217822 &gt; .search-wrapper &gt; form &gt; #search &gt; .search-input-group &gt; .search-input &gt; .flex-fill &gt; input'.</msg>
+<arg>css=#entry_217822 &gt; .search-wrapper &gt; form &gt; #search &gt; .search-input-group &gt; .search-input &gt; .flex-fill &gt; input</arg>
+<arg>HTC Touch HD</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-21T19:13:04.159422" elapsed="0.919852"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-21T19:13:05.079274" level="INFO">Clicking button 'css=button[type="submit"]:contains("Search")'.</msg>
+<msg time="2024-04-21T19:13:05.626970" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-04-21T19:13:05.634998" level="FAIL">JavascriptException: Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=123.0.6312.124)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71E917032+63090]
+	(No symbol) [0x00007FF71E882C82]
+	(No symbol) [0x00007FF71E71EC65]
+	(No symbol) [0x00007FF71E723D21]
+	(No symbol) [0x00007FF71E726159]
+	(No symbol) [0x00007FF71E726200]
+	(No symbol) [0x00007FF71E76460C]
+	(No symbol) [0x00007FF71E764ADC]
+	(No symbol) [0x00007FF71E7A5B67]
+	(No symbol) [0x00007FF71E78701F]
+	(No symbol) [0x00007FF71E7A3412]
+	(No symbol) [0x00007FF71E786D83]
+	(No symbol) [0x00007FF71E7583A8]
+	(No symbol) [0x00007FF71E759441]
+	GetHandleVerifier [0x00007FF71ED125AD+4238317]
+	GetHandleVerifier [0x00007FF71ED4F70D+4488525]
+	GetHandleVerifier [0x00007FF71ED479EF+4456495]
+	GetHandleVerifier [0x00007FF71E9F0576+953270]
+	(No symbol) [0x00007FF71E88E54F]
+	(No symbol) [0x00007FF71E889224]
+	(No symbol) [0x00007FF71E88935B]
+	(No symbol) [0x00007FF71E879B94]
+	BaseThreadInitThunk [0x00007FFE5967257D+29]
+	RtlUserThreadStart [0x00007FFE5AD6AA48+40]
+</msg>
+<arg>css=button[type="submit"]:contains("Search")</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="FAIL" start="2024-04-21T19:13:05.079274" elapsed="0.555724">JavascriptException: Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=123.0.6312.124)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71E917032+63090]
+	(No symbol) [0x00007FF71E882C82]
+	(No symbol) [0x00007FF71E71EC65]
+	(No symbol) [0x00007FF71E723D21]
+	(No symbol) [0x00007FF71E726159]
+	(No symbol) [0x00007FF71E726200]
+	(No symbol) [0x00007FF71E76460C]
+	(No symbol) [0x00007FF71E764ADC]
+	(No symbol) [0x00007FF71E7A5B67]
+	(No symbol) [0x00007FF71E78701F]
+	(No symbol) [0x00007FF71E7A3412]
+	(No symbol) [0x00007FF71E786D83]
+	(No symbol) [0x00007FF71E7583A8]
+	(No symbol) [0x00007FF71E759441]
+	GetHandleVerifier [0x00007FF71ED125AD+4238317]
+	GetHandleVerifier [0x00007FF71ED4F70D+4488525]
+	GetHandleVerifier [0x00007FF71ED479EF+4456495]
+	GetHandleVerifier [0x00007FF71E9F0576+953270]
+	(No symbol) [0x00007FF71E88E54F]
+	(No symbol) [0x00007FF71E889224]
+	(No symbol) [0x00007FF71E88935B]
+	(No symbol) [0x00007FF71E879B94]
+	BaseThreadInitThunk [0x00007FFE5967257D+29]
+	RtlUserThreadStart [0x00007FFE5AD6AA48+40]
+</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Search - HTC Touch HD</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-04-21T19:13:05.642990" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=#entry_212469 &gt; .row &gt; :nth-child(1)</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T19:13:05.642990" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=button[title="Add to Cart"]:contains('Add to Cart')</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T19:13:05.642990" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Success: You have added</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-04-21T19:13:05.642990" elapsed="0.008002"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<arg>https://ecommerce-playground.lambdatest.io/index.php?route=checkout/cart</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" start="2024-04-21T19:13:05.650992" elapsed="0.000000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>css=button[class="btn btn-danger"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-04-21T19:13:05.650992" elapsed="0.005120"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Success: You have modified your shopping cart!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-04-21T19:13:05.656112" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Your shopping cart is empty!</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2024-04-21T19:13:05.659169" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-04-21T19:12:55.552278" elapsed="10.106891">JavascriptException: Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=123.0.6312.124)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71E917032+63090]
+	(No symbol) [0x00007FF71E882C82]
+	(No symbol) [0x00007FF71E71EC65]
+	(No symbol) [0x00007FF71E723D21]
+	(No symbol) [0x00007FF71E726159]
+	(No symbol) [0x00007FF71E726200]
+	(No symbol) [0x00007FF71E76460C]
+	(No symbol) [0x00007FF71E764ADC]
+	(No symbol) [0x00007FF71E7A5B67]
+	(No symbol) [0x00007FF71E78701F]
+	(No symbol) [0x00007FF71E7A3412]
+	(No symbol) [0x00007FF71E786D83]
+	(No symbol) [0x00007FF71E7583A8]
+	(No symbol) [0x00007FF71E759441]
+	GetHandleVerifier [0x00007FF71ED125AD+4238317]
+	GetHandleVerifier [0x00007FF71ED4F70D+4488525]
+	GetHandleVerifier [0x00007FF71ED479EF+4456495]
+	GetHandleVerifier [0x00007FF71E9F0576+953270]
+	(No symbol) [0x00007FF71E88E54F]
+	(No symbol) [0x00007FF71E889224]
+	(No symbol) [0x00007FF71E88935B]
+	(No symbol) [0x00007FF71E879B94]
+	BaseThreadInitThunk [0x00007FFE5967257D+29]
+	RtlUserThreadStart [0x00007FFE5AD6AA48+40]
+</status>
+</test>
+<status status="FAIL" start="2024-04-21T19:12:37.591207" elapsed="28.087572"/>
+</suite>
+<status status="FAIL" start="2024-04-21T19:12:37.526352" elapsed="28.168577"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="3" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="3" skip="0" id="s1" name="Exercice Robot Framework">Exercice Robot Framework</stat>
+<stat pass="0" fail="3" skip="0" id="s1-s1" name="AchatProduits">Exercice Robot Framework.AchatProduits</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
